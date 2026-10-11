@@ -2,7 +2,6 @@
 
 A culture-based microbiology and data-analysis portfolio project examining bacterial isolates from raw dairy milk, antibiotic susceptibility patterns, and reported farm-level hygiene practices in Nchiru, Meru County, Kenya.
 
-> **Project status:** Initial portfolio scaffold. The uploaded analysis notebook is retained as an initial workflow, but it is **not yet a clean, end-to-end reproducible pipeline**: its code expects three Excel input files and worksheet names that do not match the datasets currently included here. The next step is to align the notebook to the actual files and validate every result against the source data before presenting findings as final.
 
 ## Research questions
 
@@ -61,25 +60,7 @@ Open `notebooks/raw_milk_analysis_initial.ipynb`.
 
 **Note:** The initial notebook currently refers to input files and sheet names not present in this repository, so it will need data-loading and schema updates before it runs from top to bottom. Do not claim the workflow is fully reproducible until that is fixed and tested.
 
-## Suggested analysis workflow
-
-1. Validate sample IDs and the number of unique samples.
-2. Inspect missing values, duplicate records, and organism coding.
-3. Produce descriptive bacterial-isolate summaries with clearly stated denominators.
-4. Summarize AST categories by organism and antibiotic, keeping untested results separate.
-5. Analyze hygiene responses using the codebook and a clearly defined outcome.
-6. Use suitable tests for small categorical samples and report effect sizes/uncertainty where possible.
-7. Export figures and tables with scripts or notebooks that can be rerun.
-
 ## Tools
 
 Python, pandas, NumPy, SciPy, statsmodels, Matplotlib, Seaborn, Plotly, openpyxl, and Jupyter.
 
-## Reproducibility checklist
-
-- [ ] Align notebook inputs and worksheet names to files in this repository.
-- [ ] Validate data types, sample identifiers, missing values, and duplicates.
-- [ ] Verify AST interpretation criteria and antibiotic denominators.
-- [ ] Re-run the complete notebook from a fresh kernel.
-- [ ] Export final figures/tables and document exact methods.
-- [ ] Remove private information and confirm permission to publish the data.
